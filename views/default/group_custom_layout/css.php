@@ -17,11 +17,11 @@
 }
 
 #group_layout_editpanel img.more_info {
-	background: url(<?php echo $vars['url']; ?>_graphics/icon_customise_info.gif) no-repeat top left;
+	background: url(<?php echo elgg_get_site_url(); ?>_graphics/icon_customise_info.gif) no-repeat top left;
 	cursor:pointer;
 }
 #group_layout_editpanel img.drag_handle {
-	background: url(<?php echo $vars['url']; ?>_graphics/icon_customise_drag.gif) no-repeat top left;
+	background: url(<?php echo elgg_get_site_url(); ?>_graphics/icon_customise_drag.gif) no-repeat top left;
 	cursor:move;
 }
 #group_layout_editpanel img {
