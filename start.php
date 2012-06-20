@@ -49,7 +49,7 @@
 
 		$group = elgg_get_page_owner_entity();
 
-		if ($group instanceof ElggGroup && elgg_get_context() == 'group_profile') {
+		if ($group instanceof ElggGroup && elgg_get_context() == 'groups') {
 			if (group_custom_layout_allow($group)) {
 				if ($group->canEdit()) {
 					$item = array('name' => elgg_echo('group_custom_layout:edit'), 
