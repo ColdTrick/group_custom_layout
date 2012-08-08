@@ -14,13 +14,3 @@
 	<admin_interface>simple</admin_interface>
 	<activate_on_install>false</activate_on_install>
 </plugin_manifest>
-
-<!-- 
-
-====================
-TO DO:
-====================
-	- center custom color input fields
-
-
--->
