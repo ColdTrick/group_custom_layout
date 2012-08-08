@@ -7,10 +7,11 @@
 	<website>http://www.coldtrick.com</website>
 	<copyright>ColdTrick 2011</copyright>
 	<license>GNU Public License version 2</license>
+	
 	<requires>
-		<type>elgg_version</type>
-		<version>2010030101</version>
+		<type>elgg_release</type>
+		<version>1.8.3</version>
 	</requires>
-	<admin_interface>simple</admin_interface>
-	<activate_on_install>false</activate_on_install>
+	
+	<category>ColdTrick</category>
 </plugin_manifest>

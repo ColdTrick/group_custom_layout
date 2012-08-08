@@ -3,6 +3,7 @@ x.x:
 - changed: version history now in CHANGES.txt
 - changed: ToDo now in README.md
 - changed: README.txt to README.md
+- changed: cleaned up manifest.xml
 
 3.0 (2012-03-16)
 - upgrade to elgg 1.8.3
