@@ -1,0 +1,65 @@
+= Version history =
+x.x:
+- changed: version history now in CHANGES.txt
+
+3.0 (2012-03-16)
+- upgrade to elgg 1.8.3
+
+2.1 (2011-05-03):
+
+- added: support for Widget Manager group option
+	
+2.0 (2011-04-04):
+
+- added: support for Widget Manager 3.0 group widget styling
+- removed: group widgets, moved to Widget Manager 3.0
+- fixed: group styling for default elgg theme
+	
+1.4.1 (2011-02-07):
+
+- fixed: issue with custom group backgrounds
+
+1.4 (2011-01-13):
+
+- added: bookmarks widget
+	
+1.3 (2010-12-22):
+
+- added: blog widget for Elgg 1.7.4
+
+1.2.1 (2010-11-26):
+
+- fixed: draggable in Elgg 1.7.4
+- fixed: videolist support for Elgg 1.7.4
+- fixed: file support for Elgg 1.7.4
+- fixed: rss widget layout error
+- fixed: background not loading
+- fixed: Free HTML widget only show when content
+
+1.2 (2010-07-20):
+
+- added: videolist support
+- fixed: event calendar widget not working
+
+1.1:
+
+- added: option to disable/enable custom colors
+- added: option to disable/enable custom background
+- changed: placement of some javascript
+- fixed: Groups widgets not dragging in Elgg 1.6
+
+1.0.2:
+
+- fixed: group discussion links now correct
+- changed: css now for default Elgg Theme
+	
+1.0.1:
+
+- fixed: ie bug dragging of widgets
+- fixed: tooltip on configured widgets
+- changed: default option of background image and colors set to 'no'
+- changed: views/default/group_custom_layout/group/css.php to support trotsvanhetzuiden.com css
+
+1.0:
+
+- Initial release
