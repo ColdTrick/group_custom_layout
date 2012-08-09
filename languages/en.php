@@ -11,22 +11,16 @@
 		// Edit
 		'group_custom_layout:edit' => "Edit Group Layout",
 		'group_custom_layout:edit:title' => "Edit Group Layout",
-		'group_custom_layout:edit:widgets' => "Widgets",
-		'group_custom_layout:edit:colors' => "Colors",
-		'group_custom_layout:edit:colors:enable' => "Enable custom colors:",
-		'group_custom_layout:edit:background' => "Background image",
-		'group_custom_layout:edit:background:enable' => "Enable custom background image:",
-		'group_custom_layout:edit:backgroundfile' => "Select a background image",
+		
+		'group_custom_layout:edit:colors' => "Widget colors",
+		'group_custom_layout:edit:colors:enable' => "Enable custom widget colors:",
 		'group_custom_layout:edit:backgroundcolor' => "Background Color",
 		'group_custom_layout:edit:bordercolor' => "Border Color",
 		'group_custom_layout:edit:titlecolor' => "Title Color",
-		'group_custom_layout:edit:reset' => "Reset",
-		'group_custom_layout:edit:reset:confirm' => "Are you sure you wish to reset the custom group layout?",
-
-		// widgets
-		'group_custom_layout:widgets:edit' => "Edit widget settings",
-		
-		
+	
+		'group_custom_layout:edit:background' => "Background image",
+		'group_custom_layout:edit:background:enable' => "Enable custom background image:",
+		'group_custom_layout:edit:backgroundfile' => "Select a background image",
 		
 		// Reset
 		'group_custom_layout:action:reset:error:input' => "Incorrect input provided",
@@ -42,9 +36,6 @@
 		'group_custom_layout:action:save:success:group' => "Custom Layout successfully saved",
 		'group_custom_layout:action:save:error:last_save' => "Error while saving existing Custom Layout",
 		'group_custom_layout:action:save:success:existing' => "Custom Layout successfully edited",
-		
-		'group_custom_layout:action:save:error:no_widget' => "No Group Widget for id: %s",
-		'group_custom_layout:action:save:error:widget_save' => "Error while saving Group Widget: %s",
 		
 		'group_custom_layout:action:save:error:title_color' => "Error while saving title color",
 		'group_custom_layout:action:save:success:title_color' => "Title color successfully saved",
