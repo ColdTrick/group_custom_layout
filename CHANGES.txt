@@ -6,6 +6,7 @@ x.x:
 - changed: README.txt to README.md
 - changed: cleaned up manifest.xml
 - changed: code cleanup
+- changed: the way custom css is loaded, for better caching
 
 3.0 (2012-03-16)
 
