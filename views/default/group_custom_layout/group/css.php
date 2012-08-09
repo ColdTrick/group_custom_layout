@@ -1,18 +1,24 @@
 <?php 
 	$group = $vars["group"];
 	$layout = $vars["layout"];
+	
+	$background_url = "";
+	if($layout->enable_background == "yes"){
+		$background_url = elgg_get_site_url() . "group_custom_layout/get_background/" . $layout->getGUID() . "/" . $layout->time_updated . ".jpg";
+	}
 ?>
 <style type="text/css">
 <?php 
-	if(!empty($layout->enable_background) && $layout->enable_background == 'yes') { ?>
+	if(!empty($background_url)) { ?>
 		body {
-			background-image: url(<?php echo elgg_get_site_url(); ?>group_custom_layout/get_background/<?php echo $group->getGUID(); ?>) !important;
+			background-image: url(<?php echo $background_url; ?>) !important;
+			background-attachment: fixed;
 		}
 	<?php 
 	}
 
-	if(!empty($layout->enable_colors) && $layout->enable_colors == 'yes') { 
-		if(elgg_is_active_plugin('widget_manager') && (elgg_get_plugin_setting('group_enable', 'widget_manager') == 'yes') && $group->widget_manager_enable == 'yes') { ?>		
+	if($layout->enable_colors == "yes") { 
+		if(elgg_is_active_plugin("widget_manager") && (elgg_get_plugin_setting("group_enable", "widget_manager") == "yes") && $group->widget_manager_enable == "yes") { ?>
 			.elgg-module-widget > .elgg-head {
 				border: 1px solid <?php echo $layout->border_color; ?>;
 				background: <?php echo $layout->background_color; ?>; 
@@ -55,5 +61,5 @@
 		<?php 
 		}
 	}
-	?>
-	</style>
+?>
+</style>

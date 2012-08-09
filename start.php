@@ -35,9 +35,8 @@
 		
 		switch($page[0]){
 			case "get_background":
-				if(!empty($page[1])) {
-					$result = true;
-					set_input("group_guid", $page[1]);
+				if(!empty($page[1]) && !empty($page[2])) {
+					set_input("layout_guid", $page[1]);
 					
 					include(dirname(__FILE__) . "/procedures/get_background.php");
 				}
