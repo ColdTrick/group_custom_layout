@@ -16,9 +16,7 @@
 						$bgf->delete();
 					}
 
-					if(remove_entity_relationship($group->getGUID(), GROUP_CUSTOM_LAYOUT_RELATION, $layout->getGUID())){
-						$layout->delete();
-						
+					if($layout->delete()){
 						system_message(elgg_echo('group_custom_layout:action:reset:success'));
 					} else {
 						register_error(elgg_echo('group_custom_layout:action:reset:error:remove'));

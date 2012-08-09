@@ -28,10 +28,7 @@
 			"title" => $title_text
 		);
 
-		$layout = null;
-		if($layouts =$group->getEntitiesFromRelationship(GROUP_CUSTOM_LAYOUT_RELATION)) {
-			$layout = $layouts[0];
-		}
+		$layout = group_custom_layout_get_layout($group);
 
 		$params["content"] = elgg_view_form("group_custom_layout/save", 
 								array("id" => "editForm", "enctype" => "multipart/form-data"), 

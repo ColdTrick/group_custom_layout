@@ -8,9 +8,7 @@
 		if(elgg_instanceof($group, "group") && $group->canEdit()) {
 			$existing = false;
 			
-			if($layouts = $group->getEntitiesFromRelationship(GROUP_CUSTOM_LAYOUT_RELATION)) {
-				$layout = $layouts[0];
-				
+			if($layout = group_custom_layout_get_layout($group)) {
 				$existing = true;
 			} else {
 				$layout = new ElggObject();

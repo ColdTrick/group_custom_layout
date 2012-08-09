@@ -12,7 +12,7 @@
 					$filename = $dataroot . "group_custom_layout/backgrounds/" . $layout->getOwnerGUID() . ".jpg";
 					
 					if($etag = md5(serialize(filemtime($filename)))) {
-						header("Etag: ". $etag);							
+						header("Etag: ". $etag);
 						$request_etag = $_SERVER["HTTP_IF_NONE_MATCH"];
 							
 						if(!empty($request_etag) && ($request_etag == $etag)) {
