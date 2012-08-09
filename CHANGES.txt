@@ -1,11 +1,14 @@
 = Version history =
 x.x:
+
 - changed: version history now in CHANGES.txt
 - changed: ToDo now in README.md
 - changed: README.txt to README.md
 - changed: cleaned up manifest.xml
+- changed: code cleanup
 
 3.0 (2012-03-16)
+
 - upgrade to elgg 1.8.3
 
 2.1 (2011-05-03):
