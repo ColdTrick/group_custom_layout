@@ -5,12 +5,17 @@
 	<version>3.0</version>
 	<description>Customize the Group layout</description>
 	<website>http://www.coldtrick.com</website>
-	<copyright>ColdTrick 2011</copyright>
+	<copyright>(C) ColdTrick IT Solutions 2011 - 2013</copyright>
 	<license>GNU Public License version 2</license>
 	
 	<requires>
 		<type>elgg_release</type>
 		<version>1.8.3</version>
+	</requires>
+	
+	<requires>
+		<type>plugin</type>
+		<name>groups</name>
 	</requires>
 	
 	<category>ColdTrick</category>
