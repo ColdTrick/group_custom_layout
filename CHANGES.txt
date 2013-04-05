@@ -1,6 +1,7 @@
 = Version history =
-x.x:
+3.1 (2013-04-05):
 
+- added: plugin now requires the groups plugin
 - changed: version history now in CHANGES.txt
 - changed: ToDo now in README.md
 - changed: README.txt to README.md
