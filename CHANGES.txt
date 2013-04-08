@@ -1,4 +1,7 @@
 = Version history =
+x.x:
+- fixed: php error when custom background could not be found
+
 3.1 (2013-04-05):
 
 - added: plugin now requires the groups plugin
