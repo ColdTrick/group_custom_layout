@@ -1,6 +1,9 @@
 = Version history =
+
 x.x:
+
 - fixed: php error when custom background could not be found
+- fixed: possible php warning when editing layout of a group
 
 3.1 (2013-04-05):
 
