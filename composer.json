@@ -1,0 +1,7 @@
+{
+    "name": "coldtrick/group_custom_layout",
+    "type": "elgg-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
