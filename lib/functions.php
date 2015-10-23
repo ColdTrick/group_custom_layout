@@ -40,7 +40,10 @@
 		
 		if(!empty($group) && elgg_instanceof($group, "group")){
 			if(group_custom_layout_allow($group)){
-				if($layouts = $group->getEntitiesFromRelationship(GROUP_CUSTOM_LAYOUT_RELATION)){
+				$layouts = $group->getEntitiesFromRelationship(array(
+					'relationship' => GROUP_CUSTOM_LAYOUT_RELATION
+				));
+				if($layouts){
 					$result = $layouts[0];
 				}
 			}

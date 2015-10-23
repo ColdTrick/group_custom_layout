@@ -11,6 +11,7 @@
 		body {
 			background-image: url(<?php echo $background_url; ?>) !important;
 			background-attachment: fixed;
+			background-size: cover;
 		}
 	<?php 
 	}

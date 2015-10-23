@@ -2,6 +2,12 @@
 
 x.x:
 
+4.0 (2015-10-22):
+ - Upgrade for Elgg 1.9+
+ - AMD load js
+ - set background image to cover
+
+
 - fixed: php error when custom background could not be found
 - fixed: possible php warning when editing layout of a group
 
