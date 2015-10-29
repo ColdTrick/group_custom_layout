@@ -42,7 +42,6 @@
 					"name" => "enable_colors",
 					"class" => "mbm",
 					"value" => $enable_colors_value, 
-					"onchange" => "elgg.group_custom_layout.check_colors();", 
 					"options_values" => $yesno_options
 			));
 		?>
@@ -75,7 +74,11 @@
 			<?php 
 			echo elgg_echo("group_custom_layout:edit:background:enable") . "&nbsp;";
 	
-			echo elgg_view("input/dropdown", array("id" => "enable_background", "name" => "enable_background", "value" => $enable_background_value, "onchange" => "elgg.group_custom_layout.check_background();", "options_values" => $yesno_options));
+			echo elgg_view("input/dropdown", array(
+				"id" => "enable_background",
+				"name" => "enable_background",
+				"value" => $enable_background_value,
+				"options_values" => $yesno_options));
 			?>
 			
 			<div id="background_container">

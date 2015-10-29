@@ -4,9 +4,8 @@
 
 	elgg_load_css("thickbox_css");
 	elgg_load_css("farbtastic_css");
-
-	elgg_load_js("thickbox_js");
-	elgg_load_js("farbtastic_js");
+	
+	elgg_require_js('group_custom_layout');
 	
 	$group_guid = (int) get_input("group_guid");
 	$group = get_entity($group_guid);

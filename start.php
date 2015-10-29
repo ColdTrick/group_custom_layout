@@ -13,11 +13,21 @@
 	function group_custom_layout_init() {
 		// extend css/js
 		elgg_extend_view("css/elgg", "group_custom_layout/css");
-		elgg_extend_view("js/elgg", "group_custom_layout/js/site");
 
-		// register external JS libraries
-		elgg_register_js("thickbox_js", 	"mod/group_custom_layout/vendors/thickbox/thickbox-compressed.js");
-		elgg_register_js("farbtastic_js", 	"mod/group_custom_layout/vendors/farbtastic/farbtastic.js");
+		// register external JS libraries		
+		elgg_define_js('thickbox_js', array(
+			'src' => "mod/group_custom_layout/vendors/thickbox/thickbox-compressed.js",
+			'deps' => array(
+				'jquery'
+			)
+		));
+		
+		elgg_define_js('farbtastic_js', array(
+			'src' => "mod/group_custom_layout/vendors/farbtastic/farbtastic.js",
+			'deps' => array(
+				'jquery'
+			)
+		));
 		
 		// register external CSS
 		elgg_register_css("thickbox_css", 	"mod/group_custom_layout/vendors/thickbox/thickbox.css");
